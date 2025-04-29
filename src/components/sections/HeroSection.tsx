@@ -35,7 +35,7 @@ export default function HeroSection() {
               variant="emergency"
               size="lg"
               icon={<Phone size={20} />}
-              onClick={() => (window.location.href = "tel:+441234567890")}
+              onClick={() => (window.location.href = "tel:+447526016590")}
             >
               Emergency Hotline
             </Button>

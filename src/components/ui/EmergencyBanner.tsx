@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Phone, AlertTriangle, X } from 'lucide-react';
+import { useState } from "react";
+import { Phone, AlertTriangle, X } from "lucide-react";
 
 export default function EmergencyBanner() {
   const [isVisible, setIsVisible] = useState(true);
@@ -12,14 +12,19 @@ export default function EmergencyBanner() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <AlertTriangle size={18} className="mr-2" />
-            <span className="font-semibold text-sm mr-2">24/7 Emergency Callouts — No Overtime Charges!</span>
+            <span className="font-semibold text-sm mr-2">
+              24/7 Emergency Callouts — No Overtime Charges!
+            </span>
           </div>
           <div className="flex items-center">
-            <a href="tel:+441234567890" className="flex items-center hover:underline font-bold">
+            <a
+              href="tel:+447526016590"
+              className="flex items-center hover:underline font-bold"
+            >
               <Phone size={16} className="mr-1" />
-              <span>01234 567 890</span>
+              <span>07526 016590</span>
             </a>
-            <button 
+            <button
               onClick={() => setIsVisible(false)}
               className="ml-4 p-1 hover:bg-yellow-500 rounded-full"
               aria-label="Close emergency banner"

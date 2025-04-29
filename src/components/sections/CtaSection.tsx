@@ -1,5 +1,5 @@
-import { Phone } from 'lucide-react';
-import Button from '../ui/Button';
+import { Phone } from "lucide-react";
+import Button from "../ui/Button";
 
 export default function CtaSection() {
   return (
@@ -11,23 +11,28 @@ export default function CtaSection() {
               Need an electrician today?
             </h2>
             <p className="text-gray-300 text-lg max-w-xl">
-              Whether it's an emergency or a planned project, our team is ready to help. Call us now for a free quote or immediate assistance.
+              Whether it's an emergency or a planned project, our team is ready
+              to help. Call us now for a free quote or immediate assistance.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              variant="secondary" 
-              size="lg" 
+            <Button
+              variant="secondary"
+              size="lg"
               icon={<Phone size={20} />}
-              onClick={() => window.location.href = 'tel:+441234567890'}
+              onClick={() => (window.location.href = "tel:+447526016590")}
             >
               Call Now
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               className="border-white text-white hover:bg-white hover:text-navy-900"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Request a Quote
             </Button>
